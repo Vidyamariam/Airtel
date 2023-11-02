@@ -1,0 +1,484 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+    box-sizing: border-box;
+}
+
+header{
+
+    width: 100%;
+    height:120px;
+
+}
+
+.navbar{
+    width: 100%;
+    height:60px;
+    display: flex;
+}
+
+.navbar-ops{
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+    margin-top: 10px;
+    display: block;
+    padding: 12px 8px;
+    
+    
+   
+}
+.navbar-ops a{
+
+    width:120px;
+    height:40px;
+   margin:20px;
+   text-decoration: none;
+   color: black;
+   text-transform: uppercase;
+    color: #87888a;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.02em;
+    white-space: nowrap;
+    font-weight: 700;
+}
+
+.navbar-ops a:hover{
+    color:#E90000;
+}
+
+/**menubbar**/
+.menubar{
+    
+    width:100%;
+    background-color:none;
+    display: flex;
+    height:100px;
+    text-align: center;
+    
+}
+
+.logo{
+       background-image: url("Airtel-logo.png");
+       width:100px;
+       height: 50px;
+       background-size: cover;
+       margin-left: 100px;
+}
+
+
+.menu-first{
+    text-align: center;
+    margin-left: 160px;
+    margin-top: 10px;
+}
+
+.menu-first ul{
+
+    display: inline-flex;
+    list-style: none;
+    text-align: center;
+
+}
+
+.menu-first ul li 
+{
+    width:120px;
+    
+}
+.menu-first ul li a{
+
+    text-decoration: none;
+    color:black;
+    margin-top: 30px;
+
+}
+.menu-first ul li:hover
+{
+   border-radius: 3px;
+}
+
+.submenu1{
+    display:none;
+    z-index:1;
+}
+.menu-first ul li:hover .submenu1
+{
+    display: block;
+    position: absolute;
+}
+.menu-first ul li:hover .submenu1 ul{
+    display: block;
+}
+
+.menu-first ul li a:hover{
+    color:#E90000;
+}
+.submenu1 ul li{
+
+    margin: 15px;
+    background-color: #FFFFFF;
+}
+.submenu1 ul li a{
+    width:100px;
+    height: 20px;
+}
+.submenu1 ul{
+    background-color: #FFFFFF;
+}
+
+.submenu1 ul li a:hover{
+    color:#E90000;
+}
+.signin{
+    width:150px;
+    height: 40px;
+    background-color: none;
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.signin i{
+    color:#E90000;
+}
+.signin p{
+    font-size: 19px;
+}
+
+/** Hero-section**/
+.hero-section{
+    height: 600px;
+    background-color: #87888a;
+    position:relative;
+    min-width:100%;
+    height:600px;
+    overflow:hidden;
+}
+
+.images{  
+   display: flex;
+}
+.images img{
+    transition: all 0.15s ease;
+}
+
+/**content-1**/
+.content1
+{
+    height:300px;
+    background-color: #FFFFFF;
+    padding-top: 30px;
+    padding-bottom: 40px
+}
+
+.content1 h2{
+    margin-left: 800px;
+    /* display: inline-block; */
+    margin-top: 40px;
+}
+.connections
+{
+    margin-left: 10%;
+    margin-top: 40px;
+    margin:0px;
+}
+.connections p{
+    margin:30px;
+}
+.connections .connect{
+    margin: 30px;
+}
+.connections p{
+    display: inline-block;
+    background-color: #e3e5ff;
+    color: #292c31;
+    margin:10px;
+    padding: 8px 12px;
+    border-radius: 15px;
+}
+.connections p:hover{
+    background-color: #000000;
+    color: #f6f6f6;
+
+}
+
+.getapp{
+    height: 50px;
+    background-color: #E90000;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.getapp a{
+    width:70px;
+    padding:5px 8px;
+    background-color:#E90000;
+    color:#FFFFFF;
+    border:1px solid #FFFFFF;
+    border-radius: 10px;
+}
+
+.content2{
+    height:400px;
+    background-color:none;
+}
+.content2 h2{
+    margin-left: 40%;
+}
+
+.connections i{
+    background-color:#e3e5ff;
+    color: #000000;
+}
+
+.connections p{
+    color: #000000;
+    background-color: none;
+}
+.connections{
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 4%;
+   
+}
+.recommendations{
+    height:500px;
+    background-color: none;
+   
+}
+.recommend-ops{
+    display: flex;
+}
+.recommend-main{
+  width: 300px;px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  margin-left: 40%;;
+    
+}
+
+.box{
+    
+    width:500px;
+    height:300px;
+    margin: 30px;
+    background-color: none;
+    border-radius: 10px;
+    margin-top:80px;
+    border:1px solid #87888a;
+}
+.box-img{
+    height: 150px;
+    background-size: cover;
+    border-radius: 10px;
+}
+.text{
+    margin-left: 20px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    
+}
+.box-content button{
+    height: 30px;
+    width:90px;
+    border: none;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    background-color: #000000;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    margin-top: 10px;
+
+}
+.box-content a{
+    width:150px;
+    height: 20px;
+    margin-left: 130px;
+    margin-top:10px;
+    padding: 20px;
+    color: blue;
+    background-color:none;
+}
+.box-content h3{
+    color:#E90000;
+}
+.box-foot{
+    display: flex;
+    align-items: center;
+}
+.box-foot a{
+    margin-left: 20px;
+}
+
+/**content3**/
+.content3{
+    height:700px;
+    background-image: url("content-3-backimg.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+   
+}
+.content3-main{
+    min-width: 1200px;
+    height: 600px;
+    background-color: none;
+    
+}
+.content3-main h4{
+    width: 500px;
+    height: 40px;
+    background-color: none;
+    color: #FFFFFF;
+    font: 32px bold,sans-serif;
+    line-height: 40px;
+    letter-spacing: -0.4px;
+    margin-left: 30%;
+}
+.content3-box1{
+    width:400px;
+    height: 480px;
+    background-color:#FFFFFF;
+    margin-left: 35%;
+    border-radius: 20px;
+}
+.c3-text1 p{
+    padding-left: 150px;
+    padding-top: 30px;
+    color:#E90000;
+}
+.c3-text2 pre{
+    padding-left: 90px;
+    padding-top: 30px;
+}
+.c3-options{
+    padding-left: 100px;
+    padding-top: 30px;
+    
+
+}
+.c3-options .ops{
+    width: 150px;
+    height: 40px;
+    background-color: #87888a;
+    margin:30px;
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 30px;
+    background-color: #e3e5ff;
+    color: #292c31;
+}
+
+/**footer**/
+.footpanel-1{
+    height: 900px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-evenly;
+}
+.list{
+    width:300px;
+    height: 500px;
+    background-color:#FFFFFF;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.list ul{
+    list-style: none;
+    margin:20px;
+    display: block;
+    text-align: center;
+    
+}
+.list ul li{
+    margin-bottom: 15px;
+
+}
+.list ul li a{
+    line-height: 17px;
+    color: #292c31;
+    font-style: normal;
+}
+
+/**foot-panel2**/
+.footpanel-2{
+    height:80px;
+    background-color: #FFFFFF;
+    padding: 27px 28px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.panel-sec{
+    width:300px;
+    height: 40px;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+}
+
+.airtel-logo
+{
+    background-image: url("airtel-icon.jpg");
+    background-size: cover;
+    height: 32px;
+    width:32px
+}
+.panel-sec .sub1{
+    width:80px;
+    height:20px;
+    background-color: #FFFFFF;
+    font-size: 14px;
+    letter-spacing: -0.005em;
+    margin-right: 8px;
+    color:#87888a;
+}
+.panel-sec .sub2{
+    width:80px;
+    height: 30px;
+    background-image: url("images/playbadge2.png");
+    background-size: cover;
+}
+.panel-sec .sub3{
+    width:100px;
+    height: 30px;
+    background-image: url("images/appleplaybadge.png");
+    background-size: cover;
+}
+.panel-sec .sub21{
+    width:100px;
+    height: 30px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    color:#87888a;
+    /* color: #696b6f; */ 
+
+}
+.panel-sec .sub21 i{
+    padding: 5px;
+    margin: 8px;
+    border-radius:50%;
+}
+.panel-sec button{
+    width:150px;
+    height: 40px;
+    margin-left: 70px;
+    border-radius: 10px;
+    border: 1px solid #000000;
+}
+
+
+
+
